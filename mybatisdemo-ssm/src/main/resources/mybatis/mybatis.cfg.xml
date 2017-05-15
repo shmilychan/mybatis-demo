@@ -7,7 +7,7 @@
 		<!-- <typeAlias type="cn.mldn.vo.News" alias="News"/> -->
 		<package name="cn.mldn.vo"/>
 	</typeAliases>
-	<mappers>	<!-- 定义所有的映射文件路径 -->
+	<!-- <mappers>	定义所有的映射文件路径
 		<mapper resource="cn/mldn/mapping/News.xml"/>
-	</mappers>
+	</mappers> -->
 </configuration>

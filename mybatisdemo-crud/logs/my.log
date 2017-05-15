@@ -1,0 +1,70 @@
+2017-05-15 23:37:01,634 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,note) VALUES (?,?) ; 
+2017-05-15 23:37:01,680 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - ==> Parameters: 努力写代码(String), 学习mybatis(String)
+2017-05-15 23:37:01,681 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - <==    Updates: 1
+2017-05-15 23:38:51,326 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,note) VALUES (?,?) ; 
+2017-05-15 23:38:51,366 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - ==> Parameters: 努力写代码(String), 学习mybatis(String)
+2017-05-15 23:38:51,367 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - <==    Updates: 1
+2017-05-15 23:44:40,694 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,note) VALUES (?,?) ; 
+2017-05-15 23:44:40,737 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - ==> Parameters: 努力写代码(String), 学习mybatis(String)
+2017-05-15 23:44:40,743 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - <==    Updates: 1
+2017-05-15 23:47:29,030 DEBUG [cn.mldn.mapping.NewsNS.doUpdate] - ==>  Preparing: UPDATE news SET title=?,note=? WHERE nid=? ; 
+2017-05-15 23:47:29,106 DEBUG [cn.mldn.mapping.NewsNS.doUpdate] - ==> Parameters: 下午捆了吗？(String), 捆也没用，继续上课，好好学习，天天向上。(String), 2(Long)
+2017-05-15 23:47:29,110 DEBUG [cn.mldn.mapping.NewsNS.doUpdate] - <==    Updates: 1
+2017-05-15 23:47:48,634 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,note) VALUES (?,?) ; 
+2017-05-15 23:47:48,695 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - ==> Parameters: 努力写代码(String), 学习mybatis(String)
+2017-05-15 23:47:48,697 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - <==    Updates: 1
+2017-05-15 23:47:53,751 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,note) VALUES (?,?) ; 
+2017-05-15 23:47:53,793 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - ==> Parameters: 努力写代码(String), 学习mybatis(String)
+2017-05-15 23:47:53,795 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - <==    Updates: 1
+2017-05-15 23:47:56,468 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - ==>  Preparing: INSERT INTO news(title,note) VALUES (?,?) ; 
+2017-05-15 23:47:56,506 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - ==> Parameters: 努力写代码(String), 学习mybatis(String)
+2017-05-15 23:47:56,508 DEBUG [cn.mldn.mapping.NewsNS.doCreate] - <==    Updates: 1
+2017-05-15 23:48:29,005 DEBUG [cn.mldn.mapping.NewsNS.doUpdate] - ==>  Preparing: UPDATE news SET title=?,note=? WHERE nid=? ; 
+2017-05-15 23:48:29,048 DEBUG [cn.mldn.mapping.NewsNS.doUpdate] - ==> Parameters: 死啦死啦地(String), 好好学习，天天向上。(String), 2(Long)
+2017-05-15 23:48:29,049 DEBUG [cn.mldn.mapping.NewsNS.doUpdate] - <==    Updates: 1
+2017-05-15 23:50:15,657 DEBUG [cn.mldn.mapping.NewsNS.doDelete] - ==>  Preparing: DELETE FROM news WHERE nid=?; 
+2017-05-15 23:50:15,706 DEBUG [cn.mldn.mapping.NewsNS.doDelete] - ==> Parameters: 1(Long)
+2017-05-15 23:50:15,707 DEBUG [cn.mldn.mapping.NewsNS.doDelete] - <==    Updates: 1
+2017-05-15 23:52:57,604 DEBUG [cn.mldn.mapping.NewsNS.findById] - ==>  Preparing: SELECT nid,title,note FROM news WHERE nid=?; 
+2017-05-15 23:52:57,647 DEBUG [cn.mldn.mapping.NewsNS.findById] - ==> Parameters: 9(Long)
+2017-05-15 23:52:57,676 DEBUG [cn.mldn.mapping.NewsNS.findById] - <==      Total: 0
+2017-05-15 23:53:09,688 DEBUG [cn.mldn.mapping.NewsNS.findById] - ==>  Preparing: SELECT nid,title,note FROM news WHERE nid=?; 
+2017-05-15 23:53:09,730 DEBUG [cn.mldn.mapping.NewsNS.findById] - ==> Parameters: 5(Long)
+2017-05-15 23:53:09,755 TRACE [cn.mldn.mapping.NewsNS.findById] - <==    Columns: nid, title, note
+2017-05-15 23:53:09,755 TRACE [cn.mldn.mapping.NewsNS.findById] - <==        Row: 5, 努力写代码, <<BLOB>>
+2017-05-15 23:53:09,762 DEBUG [cn.mldn.mapping.NewsNS.findById] - <==      Total: 1
+2017-05-15 23:53:18,383 DEBUG [cn.mldn.mapping.NewsNS.findAll] - ==>  Preparing: SELECT nid,title,note FROM news 
+2017-05-15 23:53:18,435 DEBUG [cn.mldn.mapping.NewsNS.findAll] - ==> Parameters: 
+2017-05-15 23:53:18,466 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==    Columns: nid, title, note
+2017-05-15 23:53:18,466 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 2, 死啦死啦地, <<BLOB>>
+2017-05-15 23:53:18,472 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 3, 努力写代码, <<BLOB>>
+2017-05-15 23:53:18,473 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 4, 努力写代码, <<BLOB>>
+2017-05-15 23:53:18,474 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 5, 努力写代码, <<BLOB>>
+2017-05-15 23:53:18,474 TRACE [cn.mldn.mapping.NewsNS.findAll] - <==        Row: 6, 努力写代码, <<BLOB>>
+2017-05-15 23:53:18,474 DEBUG [cn.mldn.mapping.NewsNS.findAll] - <==      Total: 5
+2017-05-16 00:07:40,046 DEBUG [cn.mldn.mapping.NewsNS.findAllSplit] - ==>  Preparing: SELECT nid,title,note FROM news WHERE title LIKE ? LIMIT ?,? 
+2017-05-16 00:07:40,096 DEBUG [cn.mldn.mapping.NewsNS.findAllSplit] - ==> Parameters: %努力%(String), 2(Integer), 2(Integer)
+2017-05-16 00:07:40,130 TRACE [cn.mldn.mapping.NewsNS.findAllSplit] - <==    Columns: nid, title, note
+2017-05-16 00:07:40,130 TRACE [cn.mldn.mapping.NewsNS.findAllSplit] - <==        Row: 5, 努力写代码, <<BLOB>>
+2017-05-16 00:07:40,135 TRACE [cn.mldn.mapping.NewsNS.findAllSplit] - <==        Row: 6, 努力写代码, <<BLOB>>
+2017-05-16 00:07:40,135 DEBUG [cn.mldn.mapping.NewsNS.findAllSplit] - <==      Total: 2
+2017-05-16 00:09:24,064 DEBUG [cn.mldn.mapping.NewsNS.getAllCount] - ==>  Preparing: SELECT COUNT(*) FROM news WHERE title LIKE ? 
+2017-05-16 00:09:24,112 DEBUG [cn.mldn.mapping.NewsNS.getAllCount] - ==> Parameters: %饿%(String)
+2017-05-16 00:09:24,139 TRACE [cn.mldn.mapping.NewsNS.getAllCount] - <==    Columns: COUNT(*)
+2017-05-16 00:09:24,139 TRACE [cn.mldn.mapping.NewsNS.getAllCount] - <==        Row: 0
+2017-05-16 00:09:24,142 DEBUG [cn.mldn.mapping.NewsNS.getAllCount] - <==      Total: 1
+2017-05-16 00:09:41,220 DEBUG [cn.mldn.mapping.NewsNS.getAllCount] - ==>  Preparing: SELECT COUNT(*) FROM news WHERE title LIKE ? 
+2017-05-16 00:09:41,278 DEBUG [cn.mldn.mapping.NewsNS.getAllCount] - ==> Parameters: %饿%(String)
+2017-05-16 00:09:41,314 TRACE [cn.mldn.mapping.NewsNS.getAllCount] - <==    Columns: COUNT(*)
+2017-05-16 00:09:41,314 TRACE [cn.mldn.mapping.NewsNS.getAllCount] - <==        Row: 0
+2017-05-16 00:09:41,316 DEBUG [cn.mldn.mapping.NewsNS.getAllCount] - <==      Total: 1
+2017-05-16 00:09:57,011 DEBUG [cn.mldn.mapping.NewsNS.getAllCount] - ==>  Preparing: SELECT COUNT(*) FROM news WHERE title LIKE ? 
+2017-05-16 00:09:57,053 DEBUG [cn.mldn.mapping.NewsNS.getAllCount] - ==> Parameters: %学习%(String)
+2017-05-16 00:09:57,079 TRACE [cn.mldn.mapping.NewsNS.getAllCount] - <==    Columns: COUNT(*)
+2017-05-16 00:09:57,079 TRACE [cn.mldn.mapping.NewsNS.getAllCount] - <==        Row: 0
+2017-05-16 00:09:57,083 DEBUG [cn.mldn.mapping.NewsNS.getAllCount] - <==      Total: 1
+2017-05-16 00:12:10,152 DEBUG [cn.mldn.mapping.NewsNS.getAllCount] - ==>  Preparing: SELECT COUNT(*) FROM news WHERE title LIKE ? 
+2017-05-16 00:12:10,223 DEBUG [cn.mldn.mapping.NewsNS.getAllCount] - ==> Parameters: %努力%(String)
+2017-05-16 00:12:10,249 TRACE [cn.mldn.mapping.NewsNS.getAllCount] - <==    Columns: COUNT(*)
+2017-05-16 00:12:10,249 TRACE [cn.mldn.mapping.NewsNS.getAllCount] - <==        Row: 4
+2017-05-16 00:12:10,252 DEBUG [cn.mldn.mapping.NewsNS.getAllCount] - <==      Total: 1

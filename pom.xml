@@ -47,6 +47,11 @@
 
 			<dependency>
 				<groupId>cn.mldn</groupId>
+				<artifactId>mybatisdemo-util</artifactId>
+				<version>${mybatisdemo.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>cn.mldn</groupId>
 				<artifactId>mybatisdemo-ssm</artifactId>
 				<version>${mybatisdemo.version}</version>
 			</dependency>
@@ -76,11 +81,7 @@
 				<version>${mchange.version}</version>
 			</dependency>
 
-			<dependency>
-				<groupId>cn.mldn</groupId>
-				<artifactId>mybatisdemo-util</artifactId>
-				<version>${mybatisdemo.version}</version>
-			</dependency>
+			
 
 			<dependency>
 				<groupId>log4j</groupId>

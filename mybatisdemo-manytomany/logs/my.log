@@ -1,0 +1,119 @@
+2017-05-17 16:50:31,924 DEBUG [cn.mldn.mapping.MemberNS.doCreate] - ==>  Preparing: INSERT INTO member(mid,name) VALUES(?,?) 
+2017-05-17 16:50:31,978 DEBUG [cn.mldn.mapping.MemberNS.doCreate] - ==> Parameters: mybatis-crud426(String), mybatis-spring(String)
+2017-05-17 16:50:31,979 DEBUG [cn.mldn.mapping.MemberNS.doCreate] - <==    Updates: 1
+2017-05-17 16:50:31,980 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - ==>  Preparing: INSERT INTO member_role(mid,rid) VALUES(?,?) 
+2017-05-17 16:50:31,981 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - ==> Parameters: mybatis-crud426(String), 1(Long)
+2017-05-17 16:50:31,982 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - <==    Updates: 1
+2017-05-17 16:50:31,982 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - ==>  Preparing: INSERT INTO member_role(mid,rid) VALUES(?,?) 
+2017-05-17 16:50:31,983 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - ==> Parameters: mybatis-crud426(String), 2(Long)
+2017-05-17 16:50:31,984 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - <==    Updates: 1
+2017-05-17 16:50:31,984 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - ==>  Preparing: INSERT INTO member_role(mid,rid) VALUES(?,?) 
+2017-05-17 16:50:31,985 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - ==> Parameters: mybatis-crud426(String), 3(Long)
+2017-05-17 16:50:31,985 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - <==    Updates: 1
+2017-05-17 16:50:31,986 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - ==>  Preparing: INSERT INTO member_role(mid,rid) VALUES(?,?) 
+2017-05-17 16:50:31,987 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - ==> Parameters: mybatis-crud426(String), 4(Long)
+2017-05-17 16:50:31,987 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - <==    Updates: 1
+2017-05-17 16:50:31,988 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - ==>  Preparing: INSERT INTO member_role(mid,rid) VALUES(?,?) 
+2017-05-17 16:50:31,988 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - ==> Parameters: mybatis-crud426(String), 5(Long)
+2017-05-17 16:50:31,989 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - <==    Updates: 1
+2017-05-17 16:50:31,990 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - ==>  Preparing: INSERT INTO member_role(mid,rid) VALUES(?,?) 
+2017-05-17 16:50:31,990 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - ==> Parameters: mybatis-crud426(String), 6(Long)
+2017-05-17 16:50:31,991 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - <==    Updates: 1
+2017-05-17 20:20:04,343 DEBUG [cn.mldn.mapping.MemberNS.findById] - ==>  Preparing: SELECT mid,name FROM member WHERE mid=? 
+2017-05-17 20:20:04,386 DEBUG [cn.mldn.mapping.MemberNS.findById] - ==> Parameters: mldn(String)
+2017-05-17 20:20:04,417 TRACE [cn.mldn.mapping.MemberNS.findById] - <==    Columns: mid, name
+2017-05-17 20:20:04,417 TRACE [cn.mldn.mapping.MemberNS.findById] - <==        Row: mldn, 老李
+2017-05-17 20:20:04,420 DEBUG [cn.mldn.mapping.MemberNS.findById] - <==      Total: 1
+2017-05-17 20:21:59,481 DEBUG [cn.mldn.mapping.MemberNS.findById] - ==>  Preparing: SELECT mid,name FROM member WHERE mid=? 
+2017-05-17 20:21:59,525 DEBUG [cn.mldn.mapping.MemberNS.findById] - ==> Parameters: mldn(String)
+2017-05-17 20:21:59,550 TRACE [cn.mldn.mapping.MemberNS.findById] - <==    Columns: mid, name
+2017-05-17 20:21:59,551 TRACE [cn.mldn.mapping.MemberNS.findById] - <==        Row: mldn, 老李
+2017-05-17 20:21:59,553 DEBUG [cn.mldn.mapping.MemberNS.findById] - <==      Total: 1
+2017-05-17 20:21:59,555 DEBUG [cn.mldn.mapping.RoleNS.findAllByMember] - ==>  Preparing: SELECT rid,title,flag FROM role WHERE rid IN ( SELECT rid FROM member_role WHERE mid=?) 
+2017-05-17 20:21:59,556 DEBUG [cn.mldn.mapping.RoleNS.findAllByMember] - ==> Parameters: mldn(String)
+2017-05-17 20:21:59,557 TRACE [cn.mldn.mapping.RoleNS.findAllByMember] - <==    Columns: rid, title, flag
+2017-05-17 20:21:59,557 TRACE [cn.mldn.mapping.RoleNS.findAllByMember] - <==        Row: 5, 【前台用户】个人中心, center
+2017-05-17 20:21:59,558 TRACE [cn.mldn.mapping.RoleNS.findAllByMember] - <==        Row: 6, 【前台用户】购物车, shopcar
+2017-05-17 20:21:59,559 TRACE [cn.mldn.mapping.RoleNS.findAllByMember] - <==        Row: 7, 【前台用户】个人资料, info
+2017-05-17 20:21:59,559 TRACE [cn.mldn.mapping.RoleNS.findAllByMember] - <==        Row: 8, 【前台用户】地址管理, address
+2017-05-17 20:21:59,559 TRACE [cn.mldn.mapping.RoleNS.findAllByMember] - <==        Row: 9, 【前台用户】订单中心, orders
+2017-05-17 20:21:59,560 DEBUG [cn.mldn.mapping.RoleNS.findAllByMember] - <==      Total: 5
+2017-05-17 20:23:28,778 DEBUG [cn.mldn.mapping.MemberNS.findById] - ==>  Preparing: SELECT mid,name FROM member WHERE mid=? 
+2017-05-17 20:23:28,824 DEBUG [cn.mldn.mapping.MemberNS.findById] - ==> Parameters: mldn(String)
+2017-05-17 20:23:28,867 TRACE [cn.mldn.mapping.MemberNS.findById] - <==    Columns: mid, name
+2017-05-17 20:23:28,867 TRACE [cn.mldn.mapping.MemberNS.findById] - <==        Row: mldn, 老李
+2017-05-17 20:23:28,870 DEBUG [cn.mldn.mapping.MemberNS.findById] - <==      Total: 1
+2017-05-17 20:23:28,872 DEBUG [cn.mldn.mapping.RoleNS.findAllByMember] - ==>  Preparing: SELECT rid,title,flag FROM role WHERE rid IN ( SELECT rid FROM member_role WHERE mid=?) 
+2017-05-17 20:23:28,872 DEBUG [cn.mldn.mapping.RoleNS.findAllByMember] - ==> Parameters: mldn(String)
+2017-05-17 20:23:28,873 TRACE [cn.mldn.mapping.RoleNS.findAllByMember] - <==    Columns: rid, title, flag
+2017-05-17 20:23:28,874 TRACE [cn.mldn.mapping.RoleNS.findAllByMember] - <==        Row: 5, 【前台用户】个人中心, center
+2017-05-17 20:23:28,875 TRACE [cn.mldn.mapping.RoleNS.findAllByMember] - <==        Row: 6, 【前台用户】购物车, shopcar
+2017-05-17 20:23:28,875 TRACE [cn.mldn.mapping.RoleNS.findAllByMember] - <==        Row: 7, 【前台用户】个人资料, info
+2017-05-17 20:23:28,876 TRACE [cn.mldn.mapping.RoleNS.findAllByMember] - <==        Row: 8, 【前台用户】地址管理, address
+2017-05-17 20:23:28,876 TRACE [cn.mldn.mapping.RoleNS.findAllByMember] - <==        Row: 9, 【前台用户】订单中心, orders
+2017-05-17 20:23:28,877 DEBUG [cn.mldn.mapping.RoleNS.findAllByMember] - <==      Total: 5
+2017-05-17 20:23:28,878 DEBUG [cn.mldn.mapping.RoleNS.findAllFlagByMember] - ==>  Preparing: SELECT flag FROM role WHERE rid IN(SELECT rid FROM member_role WHERE mid=?) 
+2017-05-17 20:23:28,879 DEBUG [cn.mldn.mapping.RoleNS.findAllFlagByMember] - ==> Parameters: mldn(String)
+2017-05-17 20:23:28,880 TRACE [cn.mldn.mapping.RoleNS.findAllFlagByMember] - <==    Columns: flag
+2017-05-17 20:23:28,880 TRACE [cn.mldn.mapping.RoleNS.findAllFlagByMember] - <==        Row: center
+2017-05-17 20:23:28,882 TRACE [cn.mldn.mapping.RoleNS.findAllFlagByMember] - <==        Row: shopcar
+2017-05-17 20:23:28,882 TRACE [cn.mldn.mapping.RoleNS.findAllFlagByMember] - <==        Row: info
+2017-05-17 20:23:28,882 TRACE [cn.mldn.mapping.RoleNS.findAllFlagByMember] - <==        Row: address
+2017-05-17 20:23:28,883 TRACE [cn.mldn.mapping.RoleNS.findAllFlagByMember] - <==        Row: orders
+2017-05-17 20:23:28,883 DEBUG [cn.mldn.mapping.RoleNS.findAllFlagByMember] - <==      Total: 5
+2017-05-17 20:24:29,232 DEBUG [cn.mldn.mapping.MemberNS.findById] - ==>  Preparing: SELECT mid,name FROM member WHERE mid=? 
+2017-05-17 20:24:29,274 DEBUG [cn.mldn.mapping.MemberNS.findById] - ==> Parameters: mldn(String)
+2017-05-17 20:24:29,314 TRACE [cn.mldn.mapping.MemberNS.findById] - <==    Columns: mid, name
+2017-05-17 20:24:29,314 TRACE [cn.mldn.mapping.MemberNS.findById] - <==        Row: mldn, 老李
+2017-05-17 20:24:29,317 DEBUG [cn.mldn.mapping.MemberNS.findById] - <==      Total: 1
+2017-05-17 20:24:29,318 DEBUG [cn.mldn.mapping.RoleNS.findAllByMember] - ==>  Preparing: SELECT rid,title,flag FROM role WHERE rid IN ( SELECT rid FROM member_role WHERE mid=?) 
+2017-05-17 20:24:29,322 DEBUG [cn.mldn.mapping.RoleNS.findAllByMember] - ==> Parameters: mldn(String)
+2017-05-17 20:24:29,324 TRACE [cn.mldn.mapping.RoleNS.findAllByMember] - <==    Columns: rid, title, flag
+2017-05-17 20:24:29,324 TRACE [cn.mldn.mapping.RoleNS.findAllByMember] - <==        Row: 5, 【前台用户】个人中心, center
+2017-05-17 20:24:29,326 TRACE [cn.mldn.mapping.RoleNS.findAllByMember] - <==        Row: 6, 【前台用户】购物车, shopcar
+2017-05-17 20:24:29,327 TRACE [cn.mldn.mapping.RoleNS.findAllByMember] - <==        Row: 7, 【前台用户】个人资料, info
+2017-05-17 20:24:29,327 TRACE [cn.mldn.mapping.RoleNS.findAllByMember] - <==        Row: 8, 【前台用户】地址管理, address
+2017-05-17 20:24:29,327 TRACE [cn.mldn.mapping.RoleNS.findAllByMember] - <==        Row: 9, 【前台用户】订单中心, orders
+2017-05-17 20:24:29,331 DEBUG [cn.mldn.mapping.RoleNS.findAllByMember] - <==      Total: 5
+2017-05-17 20:24:29,332 DEBUG [cn.mldn.mapping.RoleNS.findAllFlagByMember] - ==>  Preparing: SELECT flag FROM role WHERE rid IN(SELECT rid FROM member_role WHERE mid=?) 
+2017-05-17 20:24:29,344 DEBUG [cn.mldn.mapping.RoleNS.findAllFlagByMember] - ==> Parameters: mldn(String)
+2017-05-17 20:24:29,345 TRACE [cn.mldn.mapping.RoleNS.findAllFlagByMember] - <==    Columns: flag
+2017-05-17 20:24:29,346 TRACE [cn.mldn.mapping.RoleNS.findAllFlagByMember] - <==        Row: center
+2017-05-17 20:24:29,348 TRACE [cn.mldn.mapping.RoleNS.findAllFlagByMember] - <==        Row: shopcar
+2017-05-17 20:24:29,348 TRACE [cn.mldn.mapping.RoleNS.findAllFlagByMember] - <==        Row: info
+2017-05-17 20:24:29,348 TRACE [cn.mldn.mapping.RoleNS.findAllFlagByMember] - <==        Row: address
+2017-05-17 20:24:29,349 TRACE [cn.mldn.mapping.RoleNS.findAllFlagByMember] - <==        Row: orders
+2017-05-17 20:24:29,349 DEBUG [cn.mldn.mapping.RoleNS.findAllFlagByMember] - <==      Total: 5
+2017-05-17 20:35:00,438 DEBUG [cn.mldn.mapping.MemberNS.doUpdate] - ==>  Preparing: UPDATE member SET name=? WHERE mid=? 
+2017-05-17 20:35:00,490 DEBUG [cn.mldn.mapping.MemberNS.doUpdate] - ==> Parameters: fuck the world(String), javaEE(String)
+2017-05-17 20:35:00,491 DEBUG [cn.mldn.mapping.MemberNS.doUpdate] - <==    Updates: 0
+2017-05-17 20:36:44,872 DEBUG [cn.mldn.mapping.MemberNS.doUpdate] - ==>  Preparing: UPDATE member SET name=? WHERE mid=? 
+2017-05-17 20:36:44,921 DEBUG [cn.mldn.mapping.MemberNS.doUpdate] - ==> Parameters: fuck the world(String), mybatis-crud426(String)
+2017-05-17 20:36:44,922 DEBUG [cn.mldn.mapping.MemberNS.doUpdate] - <==    Updates: 1
+2017-05-17 20:36:44,923 DEBUG [cn.mldn.mapping.RoleNS.doRemoveRoleByMember] - ==>  Preparing: DELETE FROM member_role WHERE mid=? 
+2017-05-17 20:36:44,924 DEBUG [cn.mldn.mapping.RoleNS.doRemoveRoleByMember] - ==> Parameters: mybatis-crud426(String)
+2017-05-17 20:36:44,924 DEBUG [cn.mldn.mapping.RoleNS.doRemoveRoleByMember] - <==    Updates: 6
+2017-05-17 20:36:44,925 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - ==>  Preparing: INSERT INTO member_role(mid,rid) VALUES(?,?) 
+2017-05-17 20:36:44,926 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - ==> Parameters: mybatis-crud426(String), 7(Long)
+2017-05-17 20:36:44,935 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - <==    Updates: 1
+2017-05-17 20:36:44,936 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - ==>  Preparing: INSERT INTO member_role(mid,rid) VALUES(?,?) 
+2017-05-17 20:36:44,936 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - ==> Parameters: mybatis-crud426(String), 8(Long)
+2017-05-17 20:36:44,937 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - <==    Updates: 1
+2017-05-17 20:36:44,937 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - ==>  Preparing: INSERT INTO member_role(mid,rid) VALUES(?,?) 
+2017-05-17 20:36:44,937 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - ==> Parameters: mybatis-crud426(String), 9(Long)
+2017-05-17 20:36:44,938 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - <==    Updates: 1
+2017-05-17 20:38:15,818 DEBUG [cn.mldn.mapping.MemberNS.doUpdate] - ==>  Preparing: UPDATE member SET name=? WHERE mid=? 
+2017-05-17 20:38:15,871 DEBUG [cn.mldn.mapping.MemberNS.doUpdate] - ==> Parameters: fuck the world(String), mybatis-crud426(String)
+2017-05-17 20:38:15,874 DEBUG [cn.mldn.mapping.MemberNS.doUpdate] - <==    Updates: 1
+2017-05-17 20:38:15,875 DEBUG [cn.mldn.mapping.RoleNS.doRemoveRoleByMember] - ==>  Preparing: DELETE FROM member_role WHERE mid=? 
+2017-05-17 20:38:15,877 DEBUG [cn.mldn.mapping.RoleNS.doRemoveRoleByMember] - ==> Parameters: mybatis-crud426(String)
+2017-05-17 20:38:15,877 DEBUG [cn.mldn.mapping.RoleNS.doRemoveRoleByMember] - <==    Updates: 6
+2017-05-17 20:38:15,878 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - ==>  Preparing: INSERT INTO member_role(mid,rid) VALUES(?,?) 
+2017-05-17 20:38:15,879 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - ==> Parameters: mybatis-crud426(String), 7(Long)
+2017-05-17 20:38:15,886 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - <==    Updates: 1
+2017-05-17 20:38:15,886 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - ==>  Preparing: INSERT INTO member_role(mid,rid) VALUES(?,?) 
+2017-05-17 20:38:15,887 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - ==> Parameters: mybatis-crud426(String), 8(Long)
+2017-05-17 20:38:15,887 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - <==    Updates: 1
+2017-05-17 20:38:15,888 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - ==>  Preparing: INSERT INTO member_role(mid,rid) VALUES(?,?) 
+2017-05-17 20:38:15,888 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - ==> Parameters: mybatis-crud426(String), 9(Long)
+2017-05-17 20:38:15,889 DEBUG [cn.mldn.mapping.RoleNS.doCreateMemberRole] - <==    Updates: 1
